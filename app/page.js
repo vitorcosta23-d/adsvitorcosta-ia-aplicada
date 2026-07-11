@@ -16,17 +16,17 @@ export default function Home() {
           <h1>Central de <span className="ai-title">IA aplicada</span></h1>
           <p className="central-subtitle">
             Novidades, ferramentas e tutoriais organizados para quem vende online.
-            Escolha um topico e encontre somente o que precisa.
+            Escolha um tópico e encontre somente o que precisa.
           </p>
           <TypewriterLine />
-          <a className="scroll-cue" href="#topicos">Escolher um topico <FontAwesomeIcon icon={faArrowRight} /></a>
+          <a className="scroll-cue" href="#topicos">Escolher um tópico <FontAwesomeIcon icon={faArrowRight} /></a>
         </section>
 
         <section className="topic-directory container" id="topicos">
           <div className="directory-heading">
             <span>01 / Biblioteca</span>
-            <h2>Por onde voce quer comecar?</h2>
-            <p>Cada assunto vive em seu proprio espaco. Nada misturado, nenhum clique sem destino.</p>
+            <h2>Por onde você quer começar?</h2>
+            <p>Cada assunto vive em seu próprio espaço. Nada misturado, nenhum clique sem destino.</p>
           </div>
           <div className="topic-grid">
             {topics.map((topic, index) => (
@@ -42,7 +42,7 @@ export default function Home() {
                   <h3 className={topic.title.includes("IA") ? "ai-title" : ""}>{topic.title}</h3>
                   <span>{topic.description}</span>
                 </div>
-                <div className="topic-card-action">Abrir topico <FontAwesomeIcon icon={faArrowRight} /></div>
+                <div className="topic-card-action">Abrir tópico <FontAwesomeIcon icon={faArrowRight} /></div>
               </Link>
             ))}
           </div>
@@ -51,20 +51,20 @@ export default function Home() {
         <section className="method-section" id="metodo">
           <div className="container method-grid">
             <div className="method-intro">
-              <span>02 / Metodo editorial</span>
-              <h2>Informacao so vale quando vira teste.</h2>
+              <span>02 / Método editorial</span>
+              <h2>Informação só vale quando vira teste.</h2>
             </div>
             <div className="method-steps">
               <div><strong>01</strong><h3>Entenda</h3><p>O que mudou, sem linguagem complicada.</p></div>
               <div><strong>02</strong><h3>Aplique</h3><p>Onde a novidade entra no e-commerce.</p></div>
-              <div><strong>03</strong><h3>Teste</h3><p>Uma acao concreta para rodar na operacao.</p></div>
-              <div><strong>04</strong><h3>Compartilhe</h3><p>Conte o resultado e melhore o proximo teste.</p></div>
+              <div><strong>03</strong><h3>Teste</h3><p>Uma ação concreta para rodar na operação.</p></div>
+              <div><strong>04</strong><h3>Compartilhe</h3><p>Conte o resultado e melhore o próximo teste.</p></div>
             </div>
           </div>
         </section>
 
         <section className="home-cta container">
-          <p>O laboratorio continua no Instagram.</p>
+          <p>O laboratório continua no Instagram.</p>
           <h2>Teste, aplique e me conte o que aconteceu.</h2>
           <a href="https://instagram.com/adsvitorcosta" target="_blank" rel="noreferrer">
             Seguir @adsvitorcosta <FontAwesomeIcon icon={faArrowRight} />

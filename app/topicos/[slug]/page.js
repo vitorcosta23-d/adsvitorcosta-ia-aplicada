@@ -28,7 +28,7 @@ export default async function TopicPage({ params }) {
       <Header />
       <main className="topic-page">
         <section className="topic-hero container">
-          <Link className="back-link" href="/#topicos"><FontAwesomeIcon icon={faArrowLeft} /> Todos os topicos</Link>
+          <Link className="back-link" href="/#topicos"><FontAwesomeIcon icon={faArrowLeft} /> Todos os tópicos</Link>
           <div className="topic-hero-grid">
             <span>{topic.number}</span>
             <div>
@@ -41,8 +41,8 @@ export default async function TopicPage({ params }) {
 
         <section className="topic-content container">
           <div className="content-heading">
-            <span>Conteudos</span>
-            <h2>{articles.length ? "Publicado agora" : "Primeiras pautas em producao"}</h2>
+            <span>Conteúdos</span>
+            <h2>{articles.length ? "Publicado agora" : "Primeiras pautas em produção"}</h2>
           </div>
 
           {articles.length > 0 && (
@@ -62,17 +62,17 @@ export default async function TopicPage({ params }) {
           )}
 
           <div className="planned-list">
-            <div className="planned-label"><span>Na fila editorial</span><p>Os proximos materiais deste topico.</p></div>
+            <div className="planned-label"><span>Na fila editorial</span><p>Os próximos materiais deste tópico.</p></div>
             <div>
               {topic.planned.filter((title) => !articles.some((article) => article.title === title)).map((title, index) => (
-                <div className="planned-row" key={title}><span>0{index + 1}</span><h3>{title}</h3><small>Em producao</small></div>
+                <div className="planned-row" key={title}><span>0{index + 1}</span><h3>{title}</h3><small>Em produção</small></div>
               ))}
             </div>
           </div>
         </section>
 
-        <nav className="other-topics container" aria-label="Outros topicos">
-          <span>Explorar tambem</span>
+        <nav className="other-topics container" aria-label="Outros tópicos">
+          <span>Explorar também</span>
           <div>{topics.filter((item) => item.slug !== slug).map((item) => <Link href={`/topicos/${item.slug}`} key={item.slug}>{item.label}</Link>)}</div>
         </nav>
       </main>

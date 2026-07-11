@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 
 const phrases = [
   "O que mudou?",
-  "Onde aplicar na operacao?",
+  "Onde aplicar na operação?",
   "O que testar agora?",
 ];
 
@@ -41,7 +41,7 @@ export function TypewriterLine() {
   }, [deleting, phraseIndex, visible]);
 
   return (
-    <div className="typewriter" aria-label="O que mudou? Onde aplicar na operacao? O que testar agora?">
+    <div className="typewriter" aria-label="O que mudou? Onde aplicar na operação? O que testar agora?">
       <span aria-hidden="true">{visible}</span><i aria-hidden="true" />
     </div>
   );
