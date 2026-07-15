@@ -26,7 +26,7 @@ export default async function TopicPage({ params }) {
   return (
     <>
       <Header />
-      <main className="topic-page">
+      <main className="topic-page" id="main-content">
         <section className="topic-hero container">
           <Link className="back-link" href="/#topicos"><FontAwesomeIcon icon={faArrowLeft} /> Todos os tópicos</Link>
           <div className="topic-hero-grid">
