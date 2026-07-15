@@ -36,7 +36,7 @@ export default function Article() {
     <>
       <Header />
       <ArticleMotion />
-      <main className="article-page" id="main-content">
+      <main className="article-page">
         <header className="article-header container">
           <Link className="back-link" href="/topicos/modelos"><FontAwesomeIcon icon={faArrowLeft} /> Voltar para Modelos</Link>
           <p className="article-kicker">Modelos / Guia visual / Atualizado em 11.07.2026</p>
